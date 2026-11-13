@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 380" width="640" height="380" role="img" aria-labelledby="st sd" font-family="Iowan Old Style, Palatino Linotype, Palatino, Book Antiqua, Georgia, serif">
+  <title id="st">Plate II. Snow's two water companies, three periods</title>
+  <desc id="sd">Cholera deaths per 10,000 houses on a logarithmic scale, with exact 95% intervals. Four weeks to 5 August 1854: Southwark and Vauxhall 71.4, Lambeth 5.36. Seven weeks to 26 August (Table IX): Southwark and Vauxhall 315.4, Lambeth 37.5, and the rest of London 55.5 by the row's own figures, where Snow printed 59. Second period, 2 September to 14 October: Southwark and Vauxhall 587.6, Lambeth 115.7.</desc>
+
+  <rect width="640" height="380" fill="#f4efe4"/>
+
+  <!-- log axis: x = 120 + (log10 v - log10 2)/(3 - log10 2) * 440 -->
+  <g stroke="#c9bfae" stroke-width="0.6">
+    <path d="M120 60 V310 M184.9 60 V310 M233.9 60 V310 M283 60 V310 M347.9 60 V310 M397 60 V310 M446.1 60 V310 M510.9 60 V310 M560 60 V310"/>
+  </g>
+  <path d="M120 310 H560" stroke="#1d2733" stroke-width="1.2"/>
+  <path d="M120 60 H560" stroke="#1d2733" stroke-width="3"/>
+  <path d="M120 64 H560" stroke="#1d2733" stroke-width="0.8"/>
+  <g fill="#5d6672" font-size="13" text-anchor="middle">
+    <text x="120" y="328">2</text><text x="184.9" y="328">5</text><text x="233.9" y="328">10</text>
+    <text x="283" y="328">20</text><text x="347.9" y="328">50</text><text x="397" y="328">100</text>
+    <text x="446.1" y="328">200</text><text x="510.9" y="328">500</text><text x="560" y="328">1000</text>
+  </g>
+  <text x="340" y="352" fill="#1d2733" font-size="14" text-anchor="middle" font-style="italic">deaths from cholera per 10,000 houses (log scale)</text>
+
+  <!-- row labels -->
+  <g fill="#1d2733" font-size="13" text-anchor="end">
+    <text x="108" y="104">4 weeks</text>
+    <text x="108" y="120" fill="#5d6672" font-size="12" font-style="italic">to 5 Aug</text>
+    <text x="108" y="184">7 weeks</text>
+    <text x="108" y="200" fill="#5d6672" font-size="12" font-style="italic">Table IX</text>
+    <text x="108" y="264">6 weeks</text>
+    <text x="108" y="280" fill="#5d6672" font-size="12" font-style="italic">2 Sep–14 Oct</text>
+  </g>
+  <path d="M120 150 H560 M120 230 H560" stroke="#c9bfae" stroke-width="0.8"/>
+
+  <!-- intervals and points. S&V: filled ink; Lambeth: open ink -->
+  <g stroke="#1d2733" stroke-width="1.4">
+    <path d="M364.7 100 H381.4 M147 116 H226.5"/>
+    <path d="M474.3 180 H482.2 M312.9 196 H341.7"/>
+    <path d="M519.5 260 H525.2 M399.1 276 H415.3"/>
+  </g>
+  <g fill="#1d2733">
+    <circle cx="373.1" cy="100" r="4"/><circle cx="478.3" cy="180" r="4"/><circle cx="522.4" cy="260" r="4"/>
+  </g>
+  <g fill="#f4efe4" stroke="#1d2733" stroke-width="1.4">
+    <circle cx="189.8" cy="116" r="4"/><circle cx="327.5" cy="196" r="4"/><circle cx="407.3" cy="276" r="4"/>
+  </g>
+  <g fill="#1d2733" font-size="12">
+    <text x="388" y="96">S&amp;V 71</text><text x="197" y="132">Lambeth 5</text>
+    <text x="488" y="184">S&amp;V 315</text><text x="276" y="200" text-anchor="end">Lambeth 37</text>
+    <text x="532" y="264">S&amp;V 588</text><text x="422" y="280">Lambeth 116</text>
+  </g>
+
+  <!-- rest of London, 7 weeks: the row's own figures give 55.5; Snow printed 59 -->
+  <path d="M355.3 212 V222" stroke="#5d6672" stroke-width="1.6"/>
+  <text x="352" y="225" fill="#5d6672" font-size="12" text-anchor="end">rest 55.5</text>
+  <path d="M359.6 212 V222" stroke="#a33a2a" stroke-width="1.6"/>
+  <text x="364" y="225" fill="#a33a2a" font-size="12">printed 59</text>
+
+  <!-- key -->
+  <g font-size="12" fill="#1d2733">
+    <circle cx="128" cy="40" r="4" fill="#1d2733"/><text x="138" y="44">Southwark &amp; Vauxhall</text>
+    <circle cx="288" cy="40" r="4" fill="#f4efe4" stroke="#1d2733" stroke-width="1.4"/><text x="298" y="44">Lambeth</text>
+    <path d="M370 40 H396" stroke="#1d2733" stroke-width="1.4"/><text x="402" y="44">exact 95% interval</text>
+  </g>
+  <text x="120" y="20" fill="#5d6672" font-size="13" letter-spacing="1.2">PLATE II · SNOW 1855, RECOMPUTED</text>
+</svg>

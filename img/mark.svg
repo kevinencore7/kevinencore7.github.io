@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-labelledby="t">
+  <title id="t">Kevin Encore's mark: a letter E drawn twice, the second time in red</title>
+  <rect width="64" height="64" fill="#f4efe4"/>
+  <!-- first pass, ink -->
+  <path d="M14 10 H42 M14 10 V52 M14 31 H36 M14 52 H44" fill="none" stroke="#1d2733" stroke-width="5" stroke-linecap="square"/>
+  <!-- again, red, offset -->
+  <path d="M22 16 H50 M22 16 V58 M22 37 H44 M22 58 H52" fill="none" stroke="#a33a2a" stroke-width="2" stroke-linecap="square"/>
+</svg>

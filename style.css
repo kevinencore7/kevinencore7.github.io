@@ -1,0 +1,220 @@
+/* Kevin Encore: plate and table. See DESIGN.md. */
+
+:root {
+  --paper: #f4efe4;
+  --ink: #1d2733;
+  --quiet: #5d6672;
+  --rule: #c9bfae;
+  --red: #a33a2a;
+  --verdigris: #2e6b5e;
+  --measure: 36rem;
+  --wide: 46rem;
+  color-scheme: light;
+}
+
+* { box-sizing: border-box; }
+
+html {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  font-size: 112.5%;
+  line-height: 1.55;
+  font-variant-numeric: oldstyle-nums proportional-nums;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0 auto;
+  padding: 2.5rem 1.25rem 4rem;
+  max-width: var(--wide);
+}
+
+/* Header: the mark, the name, the nav, over a thick-thin rule */
+
+.masthead {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem 1.5rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 3px double var(--ink);
+  margin-bottom: 2.5rem;
+}
+
+.name {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  color: var(--ink);
+  text-decoration: none;
+  font-variant: small-caps;
+  letter-spacing: 0.08em;
+  font-size: 1.15rem;
+}
+.name img { width: 1.6rem; height: 1.6rem; position: relative; top: 0.12rem; }
+
+nav ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 1.2rem; flex-wrap: wrap; }
+nav a {
+  font-variant: small-caps;
+  letter-spacing: 0.06em;
+  color: var(--quiet);
+  text-decoration: none;
+}
+nav a:hover { color: var(--ink); }
+nav a[aria-current="page"] { color: var(--ink); border-bottom: 1px solid var(--ink); }
+
+/* Text */
+
+main > * { max-width: var(--measure); }
+main > .wide, main > figure, main > table, main > .table-wrap { max-width: var(--wide); }
+
+h1, h2, h3 { font-weight: normal; line-height: 1.25; }
+h1 { font-size: 2rem; margin: 0 0 0.3rem; letter-spacing: -0.005em; }
+h2 {
+  font-size: 1.25rem;
+  margin: 2.6rem 0 0.8rem;
+  padding-bottom: 0.25rem;
+  border-bottom: 1px solid var(--rule);
+}
+h3 { font-size: 1.05rem; font-style: italic; margin: 1.8rem 0 0.4rem; }
+
+.standfirst { font-size: 1.15rem; color: var(--quiet); font-style: italic; margin-top: 0; }
+
+p, ul, ol { margin: 0 0 1rem; }
+li { margin-bottom: 0.35rem; }
+
+a { color: var(--ink); text-decoration-color: var(--rule); text-underline-offset: 0.18em; text-decoration-thickness: 1px; }
+a:hover { text-decoration-color: var(--ink); }
+a:focus-visible { outline: 2px solid var(--verdigris); outline-offset: 2px; }
+
+.label, .date, figcaption .plate {
+  font-variant: small-caps;
+  letter-spacing: 0.06em;
+  color: var(--quiet);
+}
+
+blockquote {
+  margin: 1.2rem 0;
+  padding-left: 1rem;
+  border-left: 1px solid var(--rule);
+  font-style: italic;
+}
+
+hr { border: 0; border-top: 1px solid var(--rule); margin: 2rem 0; }
+
+/* Tables: the reason for the whole design */
+
+.table-wrap { overflow-x: auto; margin: 1.4rem 0 1.6rem; }
+table {
+  border-collapse: collapse;
+  font-variant-numeric: lining-nums tabular-nums;
+  font-size: 0.92rem;
+  width: 100%;
+}
+caption {
+  caption-side: top;
+  text-align: left;
+  font-variant: small-caps;
+  letter-spacing: 0.05em;
+  color: var(--quiet);
+  padding-bottom: 0.35rem;
+}
+thead th {
+  font-weight: normal;
+  font-style: italic;
+  text-align: left;
+  border-top: 3px double var(--ink);
+  border-bottom: 1px solid var(--ink);
+  padding: 0.35rem 0.6rem 0.3rem 0;
+}
+td { padding: 0.3rem 0.6rem 0.3rem 0; border-bottom: 1px solid var(--rule); vertical-align: top; }
+tbody tr:last-child td { border-bottom: 1px solid var(--ink); }
+td.n, th.n { text-align: right; white-space: nowrap; }
+
+/* Plates */
+
+figure { margin: 2rem 0; }
+figure img { display: block; width: 100%; height: auto; }
+figure.narrow img { max-width: 24rem; }
+figcaption { font-size: 0.9rem; color: var(--quiet); margin-top: 0.5rem; max-width: var(--measure); }
+figcaption .plate { margin-right: 0.4rem; }
+
+/* Claim marks */
+
+.m {
+  font-size: 0.72rem;
+  font-variant: small-caps;
+  letter-spacing: 0.05em;
+  font-style: normal;
+  padding: 0 0.3em 0.05em;
+  border: 1px solid currentColor;
+  white-space: nowrap;
+  position: relative;
+  top: -0.08em;
+}
+.m-f { color: var(--ink); }
+.m-c { color: var(--verdigris); }
+.m-i { color: var(--quiet); border-style: dotted; }
+.m-s { color: var(--quiet); border-color: var(--rule); }
+.m-g { color: var(--quiet); border-color: var(--rule); border-style: dashed; font-style: italic; }
+
+.legend { font-size: 0.9rem; color: var(--quiet); }
+.legend .m { margin-right: 0.25rem; }
+
+/* Red ink: re-checks and corrections, nothing else */
+
+.again {
+  border-left: 2px solid var(--red);
+  padding: 0.1rem 0 0.1rem 1rem;
+  margin: 1.6rem 0;
+}
+.again > .label { color: var(--red); display: block; margin-bottom: 0.3rem; }
+.again h2 { border-bottom-color: var(--red); margin-top: 0.4rem; }
+.struck { text-decoration: line-through; text-decoration-color: var(--red); }
+.red { color: var(--red); }
+
+/* Lists of things */
+
+.entries { list-style: none; padding: 0; }
+.entries li {
+  display: grid;
+  grid-template-columns: 7.5rem 1fr;
+  gap: 0 1rem;
+  padding: 0.65rem 0;
+  border-bottom: 1px solid var(--rule);
+  margin: 0;
+}
+.entries li > .date { padding-top: 0.08rem; font-variant-numeric: lining-nums tabular-nums; }
+.entries .what { font-size: 1.05rem; }
+.entries .note { display: block; color: var(--quiet); font-size: 0.93rem; }
+@media (max-width: 34rem) {
+  .entries li { grid-template-columns: 1fr; }
+}
+
+/* Footer */
+
+footer {
+  margin-top: 4rem;
+  padding-top: 0.6rem;
+  border-top: 3px double var(--ink);
+  font-size: 0.85rem;
+  color: var(--quiet);
+  max-width: var(--wide);
+}
+footer p { margin: 0 0 0.4rem; }
+
+@media print {
+  html { background: #fff; font-size: 11pt; }
+  nav, .skip { display: none; }
+  a { text-decoration: none; }
+}
+
+.skip { position: absolute; left: -999px; }
+.skip:focus { left: 1rem; top: 1rem; background: var(--paper); padding: 0.3rem 0.6rem; outline: 1px solid var(--ink); }
+
+@media (max-width: 34rem) {
+  .table-wrap table.scroll { min-width: 30rem; }
+  .table-wrap table.scroll td:first-child { min-width: 9.5rem; }
+}
