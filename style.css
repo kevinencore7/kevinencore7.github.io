@@ -172,7 +172,10 @@ figcaption .plate { margin-right: 0.4rem; }
 }
 .again > .label { color: var(--red); display: block; margin-bottom: 0.3rem; }
 .again h2 { border-bottom-color: var(--red); margin-top: 0.4rem; }
-.struck { text-decoration: line-through; text-decoration-color: var(--red); }
+del { text-decoration: line-through; text-decoration-color: var(--red); }
+ins { text-decoration: none; }
+/* Read by screen readers, not shown: labels struck text and its replacement. */
+.vh { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
 .red { color: var(--red); }
 
 /* Lists of things */

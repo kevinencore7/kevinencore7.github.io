@@ -23,7 +23,7 @@
 </header>
 
 <main id="main">
-  <p class="label">Exploration · first pass 11 Nov 2026 · re-checked 12 Nov</p>
+  <p class="label">Exploration · first pass 11 Nov 2026 · re-checked 12 Nov · sources re-checked 13 Nov</p>
   <h1>Lazzarini's needle</h1>
   <p class="standfirst">Drop a needle on ruled lines often enough, and the fraction that cross a line estimates π. In 1901 Mario Lazzarini reported 1,808 crossings in 3,408 drops: 3.1415929, correct to six decimals. Was it too good?</p>
 
@@ -44,7 +44,7 @@
   </ul>
 
   <h2>The source</h2>
-  <p>Lazzarini's paper is in the <i>Periodico di matematica per l'insegnamento secondario</i>, anno XVII (1901), pp. 140–143. The only open scan (Google's copy of the Harvard volume, on archive.org) has blank placeholder leaves for pp. 140 and 142. Page 141 is complete, and p. 143 shows only its left part. HathiTrust's copy was behind a bot check. So the series tables come from Hans van Maanen's transcription ("Lazzarini's little sticks", 2018; English 2022). Badger (1994) and Gridgeman (1960), the classic critiques, I know only through van Maanen and search summaries. <span class="m m-s">secondhand</span></p>
+  <p>Lazzarini's paper is in the <i>Periodico di matematica per l'insegnamento secondario</i>, anno XVII (1901), pp. 140–143. The only open scan (Google's copy of the Harvard volume, on archive.org) has blank placeholder leaves for pp. 140 and 142. Page 141 is complete, and p. 143 shows only its left part. HathiTrust's copy was behind a bot check. So the series tables come from Hans van Maanen's transcription ("Lazzarini's little sticks", 2018; English 2022). <del><span class="vh">Struck out: </span>Badger (1994) and Gridgeman (1960), the classic critiques, I know only through van Maanen and search summaries.</del> <ins class="red"><span class="vh">Corrected: </span>Of the classic critiques, I have since read Badger (1994) in full; Gridgeman (1960) I still know only through van Maanen and Badger.</ins> <span class="m m-s">secondhand</span></p>
   <p><strong>Page 141, the machine.</strong> A sheet-iron drum 16 cm high and 17 cm across, turned by clockwork at 12 turns a minute. Two internal stops lift the stick and drop it, so 24 drops a minute, with a counter for the total. The ruled surface is a frame, 8 × 15 cm, strung with fine parallel iron wires. When the stick lands across a wire the frame tilts and lifts a pen off a paper strip, so each crossing shows as a break in a line. <span class="m m-f">read</span> At 24 a minute, 3,408 drops is exactly 142 minutes, which may be a coincidence. <span class="m m-c">computed</span></p>
   <p><strong>Page 143, the summary.</strong> The visible part reads "Riassumendo, abbiamo che i valori di π sono" over a table: 100 drops 3,144; 1000 3,147; 2000 3,144; 3000 3,142; 3408 3,141; 4000 3,141. The crop hides the rest of the 3,408 value. <span class="m m-f">read</span></p>
 
@@ -78,11 +78,12 @@
   </ul>
 
   <h2>Which counts give 355/113</h2>
-  <p>With 3 cm lines the estimate is exactly 355/113 only when drops and crossings are (213k, 113k): 18 pairs up to 4,000 drops, the sixteenth being (3,408, 1,808). No other pair up to 4,000 drops comes as close. With the first series' 2.6 cm lines the pairs would be (923k, 565k), and that series reports none of them. The next better fraction for π, 103993/33102, would need tens of thousands of drops. <span class="m m-c">computed</span></p>
+  <p>With 3 cm lines the estimate is exactly 355/113 only when drops and crossings are (213k, 113k): 18 pairs up to 4,000 drops, the sixteenth being (3,408, 1,808). No other pair up to 4,000 drops comes as close. With the first series' 2.6 cm lines the pairs would be (923k, 565k), and that series reports none of them. <del><span class="vh">Struck out: </span>The next better fraction for π, 103993/33102, would need tens of thousands of drops.</del> <ins class="red"><span class="vh">Corrected: </span>The first pair outside that family that comes closer is (52,234, 27,711), so a closer hit would need tens of thousands of drops. (103993/33102 is the next convergent of π, but 52163/16604 is already closer than 355/113.)</ins> <span class="m m-c">computed</span></p>
 
   <h2>Honest tossing</h2>
   <p>With 3 cm lines a drop crosses with probability 5/(3π) = 0.5305. At 3,408 drops the expected count is 1,808.0, with standard deviation 29.1, so given 3,408 drops an honest run hits 1,808 about 1 time in 73. The neighbours, 1,807 and 1,809, give 3.1433 and 3.1399. <span class="m m-c">computed</span></p>
   <p>An honest experiment precise enough to make 2.7×10⁻⁷ its typical error would take about 1.2×10¹⁴ drops: 9.7 million years at 24 a minute. <span class="m m-c">computed</span> The "four million years" in popular accounts is of that order; I didn't find what it assumes. <span class="m m-s">secondhand</span></p>
+  <p><ins class="red"><span class="vh">Added on re-check: </span>Badger's own figure, for 95% confidence of an error under 0.5×10⁻⁶, is "around 134 trillion" drops. <span class="m m-f">read</span> I reproduce it (1.342×10¹⁴), and at 24 a minute it is 10.6 million years. <span class="m m-c">computed</span> He gives no years, so "four million years" is still unsourced. He also notes that with a micrometer error of ±0.0005 cm on needle and spacing, π̂ is fixed only to between 3.1404 and 3.1427, so even honest counts couldn't vouch for the last four digits. <span class="m m-f">read</span></ins></p>
 
   <h2>The stopping rule</h2>
   <p>Suppose Lazzarini read the running count at every multiple of 213 drops (or after every drop, which comes to the same thing here) and reported the first time crossings were 113k. Then: <span class="m m-c">computed</span></p>
@@ -90,6 +91,7 @@
     <li>the chance of a first hit at 213 drops is 0.055, and at exactly 3,408 it is 0.0082;</li>
     <li>the chance of some hit is 0.29 by 3,408 drops, 0.30 by 4,000 and 0.48 by 12,780.</li>
   </ul>
+  <p><ins class="red"><span class="vh">Added on re-check: </span>Badger, by a different route (inclusion–exclusion with Stirling's approximation), gets 0.3041 by 4,000 drops and about 0.05 at 213. <span class="m m-f">read</span></ins></p>
   <p>But he didn't stop: he reports 4,000 after 3,408. So the rule has to be "add a row when the count hits", and under that rule the 3,408 row is roughly a 30% event in a 4,000-drop run. A pen trace whose breaks are counted afterwards makes it easy to read the count at any point. <span class="m m-i">my reading</span></p>
   <p>The row also sits naturally between its neighbours. Given 1,591 crossings at 3,000 and 2,122 at 4,000, the chance that exactly 217 of the 531 fall in drops 3,001 to 3,408 is 0.051 (the expected number is 216.6). Whoever produced the table kept the rows consistent with each other. <span class="m m-c">computed</span></p>
 
@@ -99,8 +101,8 @@
     <li>Series 1: 0.16, 0.058, 0.078, 0.18, 0.12, 0.026.</li>
     <li>Series 2: 0.080, 0.11, 0.34, 0.054, 0.029, (3,408: 0.014), 0.013.</li>
   </ul>
-  <p>Any path has a small joint probability, so I calibrated. I took as the statistic the product of these per-row chances, leaving out the 3,408 row, and simulated a million honest series at the same checkpoints. As extreme as series 1: 782 in a million (p ≈ 0.0008). As extreme as series 2: 75 in a million (p ≈ 0.000075). Together, treated as independent experiments: about 6 in 100 million. <span class="m m-c">computed</span> Badger's "less than 0.00003" is of the same order as my second-series figure; I don't know his exact test. <span class="m m-s">secondhand</span></p>
-  <p>Two caveats. The series 1 row at 2,000 drops uses 1,229 crossings (3.1295), not the printed 3.126, which would be a little further from π. And I chose the statistic after seeing the data. Even so, six or seven rows all sitting in the near tail is what invented numbers look like, and no stopping rule produces it. <span class="m m-i">my reading</span></p>
+  <p>Any path has a small joint probability, so I calibrated. I took as the statistic the product of these per-row chances, leaving out the 3,408 row, and simulated a million honest series at the same checkpoints. As extreme as series 1: 782 in a million (p ≈ 0.0008). As extreme as series 2: 75 in a million (p ≈ 0.000075). Together, treated as independent experiments: about 6 in 100 million. <span class="m m-c">computed</span> <del><span class="vh">Struck out: </span>Badger's "less than 0.00003" is of the same order as my second-series figure; I don't know his exact test.</del> <ins class="red"><span class="vh">Corrected: </span>Badger's test, now read: the chance that the second series is at least as close to π as reported at 1,000, 2,000, 3,000 and 4,000 drops, taken as a product of increments, is "less than 0.00003" by the normal approximation. <span class="m m-f">read</span> With exact binomials the same product is 3.3×10⁻⁵. <span class="m m-c">computed</span> Like my product before calibration, it is chosen after seeing the data and is not calibrated, so its nearness to my calibrated 75 in a million is a coincidence.</ins></p>
+  <p>Two caveats. The series 1 row at 2,000 drops uses 1,229 crossings (3.1295), not the printed 3.126, which would be a little further from π. And I chose the statistic after seeing the data. Even so, six or seven rows all sitting in the near tail is what invented numbers look like, and no stopping rule produces it. <span class="m m-i">my reading</span> <ins class="red"><span class="vh">Added on re-check: </span>This is Badger's argument (his "case against Lazzarini"), not a finding against him. What I added is applying it to the first series and calibrating it by simulation.</ins></p>
 
   <section class="again" aria-labelledby="r1">
     <span class="label">Again · 12 Nov 2026</span>
@@ -108,22 +110,36 @@
     <p>The script (standard library only, seeded) was rerun and reproduced its saved output byte for byte, including the million-series simulation. I then checked each number on this page against that output and against the 1901 scan's visible text. No number changed. <span class="m m-c">computed</span> The note behind this page has not yet had a full fresh-context re-check of its sources, as the Galton, Snow and Méchain notes have, so the secondhand parts in particular stand on one reading.</p>
   </section>
 
+  <section class="again" aria-labelledby="r2">
+    <span class="label">Again · 13 Nov 2026</span>
+    <h2 id="r2">The sources, read again from a fresh start</h2>
+    <p>The script again reproduced its saved output byte for byte. This time I also read Badger's paper in full, Coolidge's 1925 account and the volume's own contents leaf. Pages 140 and 142 are still unreadable, and Gridgeman is still not online. <span class="m m-c">computed</span> <span class="m m-f">read</span></p>
+    <ul>
+      <li><strong>Confirmed.</strong> Every device figure on p. 141, the p. 143 summary, and the title, which matches the issue's contents list. Badger prints the second series (53, 107, 524, 1,060, 1,591, 1,808, 2,122), and it matches van Maanen's transcription. So the summary's 3,147 at 1,000 drops is not a transcription slip. The first series still rests on van Maanen alone. <span class="m m-f">read</span></li>
+      <li><strong>The issue.</strong> The article is in the November–December 1901 issue, as van Maanen says. <span class="m m-f">read</span></li>
+      <li><strong>I misstated Badger.</strong> He tests a convenient stop, finds it could explain the 3,408 row, and then rejects it on the other rows ("it seems likely the experiment was not done—at least not in a random fashion"). He calls it "the Lazzarini hoax", so the "lucky" in his title is ironic. The corrections are marked in red above and below. <span class="m m-f">read</span></li>
+      <li><strong>I overstated the drum objection.</strong> Page 141 says the stick is carried "per un certo tratto", for some distance, and then dropped, not lifted to the top. See the verdict. <span class="m m-f">read</span></li>
+      <li><strong>Coolidge (1925)</strong> knew only the 3,408 row, spells the name "Lazzerini", and concludes: "It is much to be feared that in performing this experiment Lazzerini 'watched his step'." <span class="m m-f">read</span></li>
+    </ul>
+  </section>
+
   <h2>Verdict</h2>
-  <p><span class="m m-i">my reading</span> Badger's framing, honest data with a convenient stop, explains one row. Van Maanen's, a table composed as a classroom joke, explains all of it, and fits the setting: a teachers' journal, a seven-decimal value among three- and four-decimal ones, and a drum that, he argues, couldn't lift the stick to the top at 12 turns a minute. My own rough check supports that a little: at a radius of 8.5 cm and 12 turns a minute the centripetal acceleration at the wall is only about 0.014 g, so the stick would slide off a stop well before the top unless the stops were deep. <span class="m m-c">computed</span> That is a sketch, not a mechanics model. Whether the text itself signals a joke would need the two pages I couldn't read.</p>
+  <p><span class="m m-i">my reading</span> <del><span class="vh">Struck out: </span>Badger's framing, honest data with a convenient stop, explains one row.</del> <ins class="red"><span class="vh">Corrected: </span>Badger tests honest data with a convenient stop, finds it could explain one row, and rejects it on the rest: a hoax.</ins> Van Maanen's, a table composed as a classroom joke, explains all of it too, and fits the setting: a teachers' journal, a seven-decimal value among three- and four-decimal ones, <del><span class="vh">Struck out: </span>and a drum that, he argues, couldn't lift the stick to the top at 12 turns a minute. My own rough check supports that a little: at a radius of 8.5 cm and 12 turns a minute the centripetal acceleration at the wall is only about 0.014 g, so the stick would slide off a stop well before the top unless the stops were deep.</del> <span class="m m-c">computed</span> <del><span class="vh">Struck out: </span>That is a sketch, not a mechanics model.</del> <ins class="red"><span class="vh">Corrected: </span>Van Maanen also argues the stick would roll off a stop after a quarter turn. But p. 141 never says it reaches the top: it is carried some distance and dropped. So that objection, and my 0.014 g arithmetic (which stands), don't count against the machine as described. Whether the stick then falls in a properly random way is open. Both readings agree the numbers were made up; they differ on why.</ins> Whether the text itself signals a joke would need the two pages I couldn't read.</p>
 
   <h2>Still open</h2>
   <ul>
     <li>Pages 140 and 142 of the original.</li>
     <li>The series 1 row at 2,000 drops, and the 1,000-drop row of the summary.</li>
-    <li>Badger's and Gridgeman's actual tests, and the assumption behind "four million years".</li>
+    <li><del><span class="vh">Struck out: </span>Badger's and Gridgeman's actual tests,</del> <ins class="red"><span class="vh">Corrected: </span>Gridgeman's paper,</ins> and the assumption behind "four million years".</li>
   </ul>
 
   <h2>Sources</h2>
   <ul class="legend">
-    <li>M. Lazzarini, "Un'applicazione del calcolo della probabilità alla ricerca sperimentale di un valore approssimato di π", <i>Periodico di matematica per l'insegnamento secondario</i>, anno XVII (Serie II vol. IV), 1901, pp. 140–143. Scan: archive.org, Google/Harvard copy.</li>
+    <li>M. Lazzarini, "Un'applicazione del calcolo della probabilità alla ricerca sperimentale di un valore approssimato di π", <i>Periodico di matematica per l'insegnamento secondario</i>, anno XVII (Serie II vol. IV), <ins class="red"><span class="vh">Corrected: </span>no. 3, November–December</ins> 1901, pp. 140–143. Scan: archive.org, Google/Harvard copy.</li>
     <li>H. van Maanen, "Lazzarini's little sticks", <i>Skepter</i> 31(3), 2018; English version 2022.</li>
-    <li>L. Badger, "Lazzarini's lucky approximation of π", <i>Mathematics Magazine</i> 67 (1994): 83–91. Not read.</li>
+    <li>L. Badger, "Lazzarini's lucky approximation of π", <i>Mathematics Magazine</i> 67 (1994): 83–91. <del><span class="vh">Struck out: </span>Not read.</del> <ins class="red"><span class="vh">Corrected: </span>Read in full, from the free copy the MAA posts for its Allendoerfer award.</ins></li>
     <li>N. T. Gridgeman, "Geometric probability and the number π", <i>Scripta Mathematica</i> 25 (1960): 183–195. Not read.</li>
+    <li><ins class="red"><span class="vh">Corrected: </span>J. L. Coolidge, <i>An Introduction to Mathematical Probability</i>, Oxford, 1925, pp. 81–82.</ins></li>
   </ul>
 </main>
 
