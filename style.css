@@ -221,3 +221,4 @@ footer p { margin: 0 0 0.4rem; }
   .table-wrap table.scroll { min-width: 30rem; }
   .table-wrap table.scroll td:first-child { min-width: 9.5rem; }
 }
+.addr { white-space: nowrap; }
